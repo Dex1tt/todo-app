@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5ede0;
+}
+.card {
+    background-color: white;
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center; 
+}
+h1 {
+    margin-bottom: 10px;
+}
+.input-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border: 1.5px solid #e0e0e0;
+}
+button {
+    padding: 10px 16px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+    margin-top: 16px;
+}
+li {
+    background: #f5f7fa;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-text {
+    flex: 1; 
+}
+
+.check-btn {
+    width: 20px;
+    height: 20px;
+    min-width: 20px; 
+    border-radius: 50%;
+    border: 1.5px solid #ccc;
+    background: none;
+    cursor: pointer;
+    font-size: 12px;
+    color: transparent;
+    padding: 0;
+}
+
+li.done .check-btn {
+    background: #4caf50;
+    border-color: #4caf50;
+    color: white;
+}
+
+li.done .task-text {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.deleteBtn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 14px;
+    cursor: pointer;
+}
+.filters {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin: 12px 0 4px;
+    width: 100%;
+}
+
+.filter-btn {
+    padding: 5px 12px;
+    font-size: 13px;
+    background: none;
+    color: #888;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background: #4a90e2;
+    color: white;
+    border-color: #4a90e2;
+}
+
+.counter {
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 8px;
+}
